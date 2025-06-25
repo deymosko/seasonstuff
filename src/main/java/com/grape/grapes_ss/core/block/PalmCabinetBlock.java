@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -24,7 +24,7 @@ import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.pathfinder.PathComputationType;
 import net.minecraft.world.phys.BlockHitResult;
-import net.satisfy.beachparty.core.block.entity.PalmCabinetBlockEntity;
+import com.grape.grapes_ss.core.block.entity.PalmCabinetBlockEntity;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

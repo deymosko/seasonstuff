@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.model;
+package com.grape.grapes_ss.forge.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;

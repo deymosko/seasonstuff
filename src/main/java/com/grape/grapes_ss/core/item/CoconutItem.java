@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.item;
+package com.grape.grapes_ss.core.item;
 
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -9,7 +9,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
-import net.satisfy.beachparty.core.entity.ThrowableCoconutEntity;
+import com.grape.grapes_ss.core.entity.ThrowableCoconutEntity;
 import org.jetbrains.annotations.NotNull;
 
 public class CoconutItem extends Item {

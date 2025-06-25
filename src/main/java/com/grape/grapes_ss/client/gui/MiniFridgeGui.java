@@ -6,8 +6,8 @@ import net.minecraft.client.gui.screens.inventory.AbstractContainerScreen;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.player.Inventory;
-import net.satisfy.beachparty.client.gui.handler.MiniFridgeGuiHandler;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.client.gui.handler.MiniFridgeGuiHandler;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 
 public class MiniFridgeGui extends AbstractContainerScreen<MiniFridgeGuiHandler> {
     public static final ResourceLocation BG = new BeachpartyIdentifier("textures/gui/freezer_gui.png");

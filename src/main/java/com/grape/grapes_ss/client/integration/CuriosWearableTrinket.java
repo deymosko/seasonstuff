@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.client.integration;
+package com.grape.grapes_ss.forge.client.integration;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleOptions;
@@ -9,8 +9,8 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.phys.Vec3;
-import net.satisfy.beachparty.core.registry.MobEffectRegistry;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.registry.MobEffectRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import top.theillusivec4.curios.api.CuriosApi;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.type.capability.ICurioItem;

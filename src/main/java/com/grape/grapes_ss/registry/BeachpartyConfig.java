@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.registry;
+package com.grape.grapes_ss.forge.registry;
 
 import com.electronwill.nightconfig.core.file.CommentedFileConfig;
 import com.electronwill.nightconfig.core.io.WritingMode;

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.renderer.block;
+package com.grape.grapes_ss.client.renderer.block;
 
 import com.google.common.collect.ImmutableMap;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -35,7 +35,7 @@ import net.minecraft.world.level.block.entity.SignText;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.phys.Vec3;
-import net.satisfy.beachparty.core.block.entity.PalmSignBlockEntity;
+import com.grape.grapes_ss.core.block.entity.PalmSignBlockEntity;
 
 import java.util.List;
 import java.util.Map;

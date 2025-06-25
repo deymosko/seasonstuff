@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.mixin;
+package com.grape.grapes_ss.forge.mixin;
 
 import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HumanoidModel;
@@ -10,9 +10,9 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.DyeableArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-import net.satisfy.beachparty.core.item.DyeableBeachpartyArmorItem;
-import net.satisfy.beachparty.core.registry.ArmorRegistry;
-import net.satisfy.beachparty.forge.model.DyedArmorModelWrapper;
+import com.grape.grapes_ss.core.item.DyeableBeachpartyArmorItem;
+import com.grape.grapes_ss.core.registry.ArmorRegistry;
+import com.grape.grapes_ss.forge.model.DyedArmorModelWrapper;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Mixin;

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.util;
+package com.grape.grapes_ss.core.util;
 
 import net.minecraft.core.BlockPos;
 import java.util.*;

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.compat.jei.categorys;
+package com.grape.grapes_ss.core.compat.jei.categorys;
 
 import mezz.jei.api.constants.VanillaTypes;
 import mezz.jei.api.gui.builder.IRecipeLayoutBuilder;
@@ -14,11 +14,11 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.client.gui.MiniFridgeGui;
-import net.satisfy.beachparty.core.compat.jei.BeachpartyJEIPlugin;
-import net.satisfy.beachparty.core.recipe.MiniFridgeRecipe;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.client.gui.MiniFridgeGui;
+import com.grape.grapes_ss.core.compat.jei.BeachpartyJEIPlugin;
+import com.grape.grapes_ss.core.recipe.MiniFridgeRecipe;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import net.minecraft.world.item.Items;
 import org.jetbrains.annotations.NotNull;
 

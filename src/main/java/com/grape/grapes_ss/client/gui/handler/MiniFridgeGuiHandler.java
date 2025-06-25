@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.gui.handler;
+package com.grape.grapes_ss.client.gui.handler;
 
 import net.minecraft.world.Container;
 import net.minecraft.world.SimpleContainer;
@@ -9,8 +9,8 @@ import net.minecraft.world.inventory.ContainerData;
 import net.minecraft.world.inventory.SimpleContainerData;
 import net.minecraft.world.inventory.Slot;
 import net.minecraft.world.item.ItemStack;
-import net.satisfy.beachparty.client.gui.handler.slot.PalmBarOutputSlot;
-import net.satisfy.beachparty.core.registry.ScreenHandlerTypesRegistry;
+import com.grape.grapes_ss.client.gui.handler.slot.PalmBarOutputSlot;
+import com.grape.grapes_ss.core.registry.ScreenHandlerTypesRegistry;
 import org.jetbrains.annotations.NotNull;
 
 public class MiniFridgeGuiHandler extends AbstractContainerMenu {

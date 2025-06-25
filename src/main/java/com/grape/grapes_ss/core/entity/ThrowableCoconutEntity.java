@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.entity;
+package com.grape.grapes_ss.core.entity;
 
 import net.minecraft.core.particles.ItemParticleOption;
 import net.minecraft.core.particles.ParticleOptions;
@@ -13,9 +13,9 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
 import net.minecraft.world.item.Items;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import org.jetbrains.annotations.NotNull;
 
 public class ThrowableCoconutEntity extends ThrowableItemProjectile {

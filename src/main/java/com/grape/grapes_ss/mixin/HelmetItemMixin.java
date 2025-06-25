@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.mixin;
+package com.grape.grapes_ss.forge.mixin;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;
@@ -11,9 +11,9 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.client.extensions.common.IClientItemExtensions;
-import net.satisfy.beachparty.core.item.TrinketsArmorItem;
-import net.satisfy.beachparty.core.registry.ArmorRegistry;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.item.TrinketsArmorItem;
+import com.grape.grapes_ss.core.registry.ArmorRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 import org.spongepowered.asm.mixin.Final;

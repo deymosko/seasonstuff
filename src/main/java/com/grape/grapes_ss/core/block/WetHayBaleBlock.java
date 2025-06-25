@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.entity.BlockEntityTicker;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
-import net.satisfy.beachparty.core.block.entity.WetHayBaleBlockEntity;
+import com.grape.grapes_ss.core.block.entity.WetHayBaleBlockEntity;
 import org.jetbrains.annotations.NotNull;
 
 public class WetHayBaleBlock extends RotatedPillarBlock implements EntityBlock {

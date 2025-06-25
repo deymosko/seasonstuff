@@ -1,13 +1,13 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.effect.MobEffect;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.effect.OceanWalkEffect;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.effect.OceanWalkEffect;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 
 import java.util.function.Supplier;
 

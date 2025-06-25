@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.effect;
+package com.grape.grapes_ss.core.effect;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;

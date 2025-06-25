@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

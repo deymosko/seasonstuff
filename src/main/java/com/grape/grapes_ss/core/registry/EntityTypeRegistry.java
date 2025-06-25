@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -8,15 +8,15 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntityType;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.block.entity.*;
-import net.satisfy.beachparty.core.entity.*;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
-import net.satisfy.beachparty.platform.PlatformHelper;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.block.entity.*;
+import com.grape.grapes_ss.core.entity.*;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.platform.PlatformHelper;
 
 import java.util.function.Supplier;
 
-import static net.satisfy.beachparty.core.registry.ObjectRegistry.*;
+import static com.grape.grapes_ss.core.registry.ObjectRegistry.*;
 
 public class EntityTypeRegistry {
     private static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES = DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, Beachparty.MOD_ID);

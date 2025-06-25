@@ -1,11 +1,11 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
-import net.satisfy.beachparty.Beachparty;
+import com.grape.grapes_ss.Beachparty;
 
 public class PlacerTypesRegistry {
     public static final DeferredRegister<FoliagePlacerType<?>> FOLIAGE_PLACER_TYPES = DeferredRegister.create(ForgeRegistries.FOLIAGE_PLACER_TYPES, Beachparty.MOD_ID);

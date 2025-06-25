@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -8,7 +8,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
-import net.satisfy.beachparty.Beachparty;
+import com.grape.grapes_ss.Beachparty;
 
 @SuppressWarnings("unused")
 public class TabRegistry {

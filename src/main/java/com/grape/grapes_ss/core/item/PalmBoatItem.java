@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.item;
+package com.grape.grapes_ss.core.item;
 
 import net.minecraft.stats.Stats;
 import net.minecraft.world.InteractionHand;
@@ -14,8 +14,8 @@ import net.minecraft.world.level.gameevent.GameEvent;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
-import net.satisfy.beachparty.core.entity.PalmBoatEntity;
-import net.satisfy.beachparty.core.entity.PalmChestBoatEntity;
+import com.grape.grapes_ss.core.entity.PalmBoatEntity;
+import com.grape.grapes_ss.core.entity.PalmChestBoatEntity;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

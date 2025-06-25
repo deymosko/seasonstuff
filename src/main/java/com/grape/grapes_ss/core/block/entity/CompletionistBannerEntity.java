@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block.entity;
+package com.grape.grapes_ss.core.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -8,7 +8,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
 
 import java.util.List;
 

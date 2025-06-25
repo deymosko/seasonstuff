@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.client.integration;
+package com.grape.grapes_ss.forge.client.integration;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
@@ -10,9 +10,9 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import net.satisfy.beachparty.client.model.RubberRingAxolotlModel;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.client.model.RubberRingAxolotlModel;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 import org.joml.Quaternionf;
 import top.theillusivec4.curios.api.SlotContext;
 import top.theillusivec4.curios.api.client.ICurioRenderer;

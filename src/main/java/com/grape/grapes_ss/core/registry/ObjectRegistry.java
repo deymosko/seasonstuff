@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 
 import net.minecraftforge.registries.DeferredRegister;
@@ -24,13 +24,13 @@ import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.block.*;
-import net.satisfy.beachparty.core.entity.PalmBoatEntity;
-import net.satisfy.beachparty.core.item.*;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
-import net.satisfy.beachparty.core.util.BeachpartyWoodType;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.block.*;
+import com.grape.grapes_ss.core.entity.PalmBoatEntity;
+import com.grape.grapes_ss.core.item.*;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.core.util.BeachpartyWoodType;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
 import java.util.function.Consumer;

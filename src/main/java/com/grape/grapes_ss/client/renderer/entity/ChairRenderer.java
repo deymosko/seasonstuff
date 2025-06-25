@@ -1,10 +1,10 @@
-package net.satisfy.beachparty.client.renderer.entity;
+package com.grape.grapes_ss.client.renderer.entity;
 
 import net.minecraft.client.renderer.culling.Frustum;
 import net.minecraft.client.renderer.entity.EntityRenderer;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.resources.ResourceLocation;
-import net.satisfy.beachparty.core.entity.ChairEntity;
+import com.grape.grapes_ss.core.entity.ChairEntity;
 
 public class ChairRenderer extends EntityRenderer<ChairEntity> {
     public ChairRenderer(EntityRendererProvider.Context ctx) {

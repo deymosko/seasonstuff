@@ -1,12 +1,12 @@
-package net.satisfy.beachparty.core.compat.rei;
+package com.grape.grapes_ss.core.compat.rei;
 
 import me.shedaniel.rei.api.client.registry.category.CategoryRegistry;
 import me.shedaniel.rei.api.client.registry.display.DisplayRegistry;
 import me.shedaniel.rei.api.common.util.EntryStacks;
-import net.satisfy.beachparty.core.compat.rei.category.PalmBarCategory;
-import net.satisfy.beachparty.core.compat.rei.display.PalmBarDisplay;
-import net.satisfy.beachparty.core.recipe.PalmBarRecipe;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.compat.rei.category.PalmBarCategory;
+import com.grape.grapes_ss.core.compat.rei.display.PalmBarDisplay;
+import com.grape.grapes_ss.core.recipe.PalmBarRecipe;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 
 public class BeachpartyREIClientPlugin {
     public static void registerCategories(CategoryRegistry registry) {

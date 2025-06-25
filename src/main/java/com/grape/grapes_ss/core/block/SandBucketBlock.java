@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
@@ -37,9 +37,9 @@ import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
-import net.satisfy.beachparty.core.util.SandCastleManager;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.core.util.SandCastleManager;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.HashMap;

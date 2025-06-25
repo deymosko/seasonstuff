@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.event;
+package com.grape.grapes_ss.core.event;
 
 import net.minecraftforge.event.LootTableLoadEvent;
 import net.minecraftforge.event.entity.living.LivingHurtEvent;
@@ -24,9 +24,9 @@ import net.minecraft.world.level.storage.loot.entries.LootPoolEntryContainer;
 import net.minecraft.world.level.storage.loot.entries.LootTableReference;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.Vec3;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.block.BeachParasolBlock;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.block.BeachParasolBlock;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import org.jetbrains.annotations.Nullable;
 
 @Mod.EventBusSubscriber(modid = Beachparty.MOD_ID)

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.compat.jei;
+package com.grape.grapes_ss.core.compat.jei;
 
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
@@ -12,13 +12,13 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeManager;
-import net.satisfy.beachparty.client.gui.handler.PalmBarGuiHandler;
-import net.satisfy.beachparty.core.compat.jei.categorys.PalmBarCategory;
-import net.satisfy.beachparty.core.recipe.PalmBarRecipe;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.core.registry.RecipeRegistry;
-import net.satisfy.beachparty.core.registry.ScreenHandlerTypesRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.client.gui.handler.PalmBarGuiHandler;
+import com.grape.grapes_ss.core.compat.jei.categorys.PalmBarCategory;
+import com.grape.grapes_ss.core.recipe.PalmBarRecipe;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.registry.RecipeRegistry;
+import com.grape.grapes_ss.core.registry.ScreenHandlerTypesRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.List;

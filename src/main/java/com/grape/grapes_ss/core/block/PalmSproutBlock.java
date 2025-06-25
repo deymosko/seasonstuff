@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceKey;
@@ -11,7 +11,7 @@ import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.grower.AbstractTreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
-import net.satisfy.beachparty.core.world.ConfiguredFeatures;
+import com.grape.grapes_ss.core.world.ConfiguredFeatures;
 import org.jetbrains.annotations.NotNull;
 
 public class PalmSproutBlock extends SaplingBlock {
