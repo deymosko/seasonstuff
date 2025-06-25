@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.entity;
+package com.grape.grapes_ss.core.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.nbt.CompoundTag;
@@ -11,7 +11,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.Vec3;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
 import org.jetbrains.annotations.NotNull;
 
 public class ChairEntity extends Entity {

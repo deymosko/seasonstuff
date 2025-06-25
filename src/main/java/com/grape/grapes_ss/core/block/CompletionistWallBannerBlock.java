@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import com.google.common.collect.ImmutableMap;
 import com.google.common.collect.Maps;

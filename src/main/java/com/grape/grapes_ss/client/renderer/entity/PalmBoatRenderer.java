@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.renderer.entity;
+package com.grape.grapes_ss.client.renderer.entity;
 
 import com.google.common.collect.ImmutableMap;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -19,9 +19,9 @@ import net.minecraft.client.renderer.texture.OverlayTexture;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.vehicle.Boat;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.client.model.FloatyBoatModel;
-import net.satisfy.beachparty.core.entity.PalmBoatEntity;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.client.model.FloatyBoatModel;
+import com.grape.grapes_ss.core.entity.PalmBoatEntity;
 import org.jetbrains.annotations.NotNull;
 import org.joml.Quaternionf;
 

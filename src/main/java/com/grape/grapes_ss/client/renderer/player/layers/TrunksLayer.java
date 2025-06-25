@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.client.renderer.player.layers;
+package com.grape.grapes_ss.forge.client.renderer.player.layers;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
@@ -10,10 +10,10 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.ItemStack;
-import net.satisfy.beachparty.client.model.TrunksModel;
-import net.satisfy.beachparty.core.item.DyeableBeachpartyArmorItem;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.client.model.TrunksModel;
+import com.grape.grapes_ss.core.item.DyeableBeachpartyArmorItem;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 import org.jetbrains.annotations.NotNull;
 
 public class TrunksLayer<T extends LivingEntity, M extends HumanoidModel<T>> extends RenderLayer<T, M> {

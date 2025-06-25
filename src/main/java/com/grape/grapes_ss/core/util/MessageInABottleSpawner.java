@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.util;
+package com.grape.grapes_ss.core.util;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
@@ -7,8 +7,8 @@ import net.minecraft.tags.BlockTags;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.Heightmap;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.platform.PlatformHelper;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.platform.PlatformHelper;
 import org.joml.Vector3d;
 
 public class MessageInABottleSpawner {

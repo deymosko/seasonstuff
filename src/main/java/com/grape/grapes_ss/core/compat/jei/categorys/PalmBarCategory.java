@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.compat.jei.categorys;
+package com.grape.grapes_ss.core.compat.jei.categorys;
 
 
 import mezz.jei.api.constants.VanillaTypes;
@@ -16,11 +16,11 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.core.NonNullList;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.client.gui.PalmBarGui;
-import net.satisfy.beachparty.core.compat.jei.BeachpartyJEIPlugin;
-import net.satisfy.beachparty.core.recipe.PalmBarRecipe;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.client.gui.PalmBarGui;
+import com.grape.grapes_ss.core.compat.jei.BeachpartyJEIPlugin;
+import com.grape.grapes_ss.core.recipe.PalmBarRecipe;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import org.jetbrains.annotations.NotNull;
 
 public class PalmBarCategory implements IRecipeCategory<PalmBarRecipe> {

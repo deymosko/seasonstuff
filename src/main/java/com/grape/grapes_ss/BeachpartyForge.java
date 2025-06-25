@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge;
+package com.grape.grapes_ss.forge;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
@@ -14,15 +14,15 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLPaths;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.block.BeachSunLounger;
-import net.satisfy.beachparty.core.block.BeachTowelBlock;
-import net.satisfy.beachparty.core.registry.CompostablesRegistry;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.forge.client.integration.CuriosWearableTrinket;
-import net.satisfy.beachparty.forge.registry.BeachpartyConfig;
-import net.satisfy.beachparty.forge.registry.BeachpartyVillagers;
-import net.satisfy.beachparty.platform.PlatformHelper;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.block.BeachSunLounger;
+import com.grape.grapes_ss.core.block.BeachTowelBlock;
+import com.grape.grapes_ss.core.registry.CompostablesRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.forge.client.integration.CuriosWearableTrinket;
+import com.grape.grapes_ss.forge.registry.BeachpartyConfig;
+import com.grape.grapes_ss.forge.registry.BeachpartyVillagers;
+import com.grape.grapes_ss.platform.PlatformHelper;
 
 @Mod(Beachparty.MOD_ID)
 public class BeachpartyForge {

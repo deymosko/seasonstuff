@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.entity;
+package com.grape.grapes_ss.core.entity;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.protocol.Packet;
@@ -12,9 +12,9 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.vehicle.Boat;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.Level;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Supplier;

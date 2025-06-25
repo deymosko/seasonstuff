@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block;
+package com.grape.grapes_ss.core.block;
 
 import net.minecraft.Util;
 import net.minecraft.core.BlockPos;
@@ -28,8 +28,8 @@ import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.satisfy.beachparty.core.block.entity.MiniFridgeBlockEntity;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.core.block.entity.MiniFridgeBlockEntity;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

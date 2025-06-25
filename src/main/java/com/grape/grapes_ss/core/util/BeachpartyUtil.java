@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.util;
+package com.grape.grapes_ss.core.util;
 
 import com.google.gson.JsonArray;
 import com.mojang.datafixers.util.Pair;
@@ -26,8 +26,8 @@ import net.minecraft.world.phys.shapes.Shapes;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import net.satisfy.beachparty.core.entity.ChairEntity;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.entity.ChairEntity;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
 import org.jetbrains.annotations.NotNull;
 
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.model;
+package com.grape.grapes_ss.client.model;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.vertex.PoseStack;
@@ -12,7 +12,7 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.vehicle.Boat;
-import net.satisfy.beachparty.Beachparty;
+import com.grape.grapes_ss.Beachparty;
 import org.jetbrains.annotations.NotNull;
 
 @SuppressWarnings("unused")

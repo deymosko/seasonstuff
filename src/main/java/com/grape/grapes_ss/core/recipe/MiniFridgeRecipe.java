@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.recipe;
+package com.grape.grapes_ss.core.recipe;
 
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParseException;
@@ -11,8 +11,8 @@ import net.minecraft.world.Container;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
-import net.satisfy.beachparty.core.registry.RecipeRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.core.registry.RecipeRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
 import org.jetbrains.annotations.NotNull;
 
 public class MiniFridgeRecipe implements Recipe<Container> {

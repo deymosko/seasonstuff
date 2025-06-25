@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.gui.handler.slot;
+package com.grape.grapes_ss.client.gui.handler.slot;
 
 import net.minecraft.world.Container;
 import net.minecraft.world.entity.player.Player;

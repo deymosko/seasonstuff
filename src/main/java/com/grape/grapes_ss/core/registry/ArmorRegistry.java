@@ -1,11 +1,11 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.model.Model;
 import net.minecraft.client.model.geom.EntityModelSet;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.world.item.Item;
-import net.satisfy.beachparty.client.model.*;
+import com.grape.grapes_ss.client.model.*;
 
 import java.util.HashMap;
 import java.util.Map;

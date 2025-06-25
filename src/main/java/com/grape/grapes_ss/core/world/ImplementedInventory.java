@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.world;
+package com.grape.grapes_ss.core.world;
 
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;

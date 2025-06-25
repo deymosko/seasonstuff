@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block.entity;
+package com.grape.grapes_ss.core.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -16,9 +16,9 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 
 public class WetHayBaleBlockEntity extends BlockEntity {
     public static final TagKey<Biome> HOT_BIOME = TagKey.create(Registries.BIOME, new BeachpartyIdentifier("hot_biome"));

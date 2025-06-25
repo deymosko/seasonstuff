@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block.entity;
+package com.grape.grapes_ss.core.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -18,11 +18,11 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.entity.BlockEntity;
 import net.minecraft.world.level.block.state.BlockState;
-import net.satisfy.beachparty.client.gui.handler.PalmBarGuiHandler;
-import net.satisfy.beachparty.core.recipe.PalmBarRecipe;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
-import net.satisfy.beachparty.core.registry.RecipeRegistry;
+import com.grape.grapes_ss.client.gui.handler.PalmBarGuiHandler;
+import com.grape.grapes_ss.core.recipe.PalmBarRecipe;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.core.registry.RecipeRegistry;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

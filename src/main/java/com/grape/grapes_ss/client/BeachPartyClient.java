@@ -1,18 +1,18 @@
-package net.satisfy.beachparty.client;
+package com.grape.grapes_ss.client;
 
 
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
-import net.satisfy.beachparty.client.gui.MiniFridgeGui;
-import net.satisfy.beachparty.client.gui.PalmBarGui;
-import net.satisfy.beachparty.client.model.*;
-import net.satisfy.beachparty.client.renderer.entity.ChairRenderer;
-import net.satisfy.beachparty.client.renderer.entity.PalmBoatRenderer;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
-import net.satisfy.beachparty.core.registry.ScreenHandlerTypesRegistry;
-import net.satisfy.beachparty.core.util.BeachpartyUtil;
+import com.grape.grapes_ss.client.gui.MiniFridgeGui;
+import com.grape.grapes_ss.client.gui.PalmBarGui;
+import com.grape.grapes_ss.client.model.*;
+import com.grape.grapes_ss.client.renderer.entity.ChairRenderer;
+import com.grape.grapes_ss.client.renderer.entity.PalmBoatRenderer;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.ScreenHandlerTypesRegistry;
+import com.grape.grapes_ss.core.util.BeachpartyUtil;
 
-import static net.satisfy.beachparty.core.registry.ObjectRegistry.*;
+import static com.grape.grapes_ss.core.registry.ObjectRegistry.*;
 
 public class BeachPartyClient {
     public static void initClient() {

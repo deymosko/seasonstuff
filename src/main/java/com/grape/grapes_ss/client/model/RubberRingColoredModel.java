@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.model;
+package com.grape.grapes_ss.client.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -11,7 +11,7 @@ import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.player.Player;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 
 @SuppressWarnings("unused")
 public class RubberRingColoredModel<T extends Entity> extends EntityModel<T> implements ChestplateModel {

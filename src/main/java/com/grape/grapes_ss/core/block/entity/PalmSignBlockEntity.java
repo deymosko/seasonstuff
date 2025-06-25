@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.block.entity;
+package com.grape.grapes_ss.core.block.entity;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;

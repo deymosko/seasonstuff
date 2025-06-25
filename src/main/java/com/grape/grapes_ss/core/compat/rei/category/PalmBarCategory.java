@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.compat.rei.category;
+package com.grape.grapes_ss.core.compat.rei.category;
 
 import com.google.common.collect.Lists;
 import me.shedaniel.math.Point;
@@ -10,9 +10,9 @@ import me.shedaniel.rei.api.client.registry.display.DisplayCategory;
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.util.EntryStacks;
 import net.minecraft.network.chat.Component;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.compat.rei.display.PalmBarDisplay;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.compat.rei.display.PalmBarDisplay;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.item;
+package com.grape.grapes_ss.core.item;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;

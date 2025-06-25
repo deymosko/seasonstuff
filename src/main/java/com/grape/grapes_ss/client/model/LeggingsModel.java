@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.model;
+package com.grape.grapes_ss.client.model;
 
 import net.minecraft.client.model.geom.ModelPart;
 

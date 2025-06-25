@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.renderer.block;
+package com.grape.grapes_ss.client.renderer.block;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -16,10 +16,10 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
 import net.minecraft.world.level.block.state.BlockState;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.block.CompletionistBannerBlock;
-import net.satisfy.beachparty.core.block.CompletionistWallBannerBlock;
-import net.satisfy.beachparty.core.block.entity.CompletionistBannerEntity;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.block.CompletionistBannerBlock;
+import com.grape.grapes_ss.core.block.CompletionistWallBannerBlock;
+import com.grape.grapes_ss.core.block.entity.CompletionistBannerEntity;
 
 public class CompletionistBannerRenderer implements BlockEntityRenderer<CompletionistBannerEntity> {
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Beachparty.MOD_ID, "banner"), "main");

@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.mixin;
+package com.grape.grapes_ss.core.mixin;
 
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.GoalSelector;

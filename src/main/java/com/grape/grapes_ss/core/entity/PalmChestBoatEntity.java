@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.entity;
+package com.grape.grapes_ss.core.entity;
 
 import net.minecraft.core.NonNullList;
 import net.minecraft.nbt.CompoundTag;
@@ -21,7 +21,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.gameevent.GameEvent;
-import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
+import com.grape.grapes_ss.core.registry.EntityTypeRegistry;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 

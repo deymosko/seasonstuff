@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -6,9 +6,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.inventory.MenuType;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.client.gui.handler.MiniFridgeGuiHandler;
-import net.satisfy.beachparty.client.gui.handler.PalmBarGuiHandler;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.client.gui.handler.MiniFridgeGuiHandler;
+import com.grape.grapes_ss.client.gui.handler.PalmBarGuiHandler;
 
 import java.util.function.Supplier;
 

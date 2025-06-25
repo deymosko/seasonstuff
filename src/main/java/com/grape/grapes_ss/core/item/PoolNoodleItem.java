@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.item;
+package com.grape.grapes_ss.core.item;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;

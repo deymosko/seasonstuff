@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.client.model;
+package com.grape.grapes_ss.client.model;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
@@ -8,7 +8,7 @@ import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
 import net.minecraft.world.entity.Entity;
-import net.satisfy.beachparty.core.util.BeachpartyIdentifier;
+import com.grape.grapes_ss.core.util.BeachpartyIdentifier;
 
 public class CrocsModel<T extends Entity> extends EntityModel<T> implements LeggingsModel {
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new BeachpartyIdentifier("crocs"), "main");

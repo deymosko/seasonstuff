@@ -1,12 +1,12 @@
-package net.satisfy.beachparty.core.compat.rei.display;
+package com.grape.grapes_ss.core.compat.rei.display;
 
 import me.shedaniel.rei.api.common.category.CategoryIdentifier;
 import me.shedaniel.rei.api.common.display.basic.BasicDisplay;
 import me.shedaniel.rei.api.common.entry.EntryIngredient;
 import me.shedaniel.rei.api.common.util.EntryIngredients;
 import net.minecraft.resources.ResourceLocation;
-import net.satisfy.beachparty.core.compat.rei.category.PalmBarCategory;
-import net.satisfy.beachparty.core.recipe.PalmBarRecipe;
+import com.grape.grapes_ss.core.compat.rei.category.PalmBarCategory;
+import com.grape.grapes_ss.core.recipe.PalmBarRecipe;
 
 import java.util.ArrayList;
 import java.util.Collections;

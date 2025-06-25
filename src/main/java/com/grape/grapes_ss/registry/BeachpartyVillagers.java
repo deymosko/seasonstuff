@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.forge.registry;
+package com.grape.grapes_ss.forge.registry;
 
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.sounds.SoundEvents;
@@ -8,8 +8,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.registry.ObjectRegistry;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.registry.ObjectRegistry;
 
 public class BeachpartyVillagers {
     public static final DeferredRegister<PoiType> POI_TYPES = DeferredRegister.create(ForgeRegistries.POI_TYPES, Beachparty.MOD_ID);

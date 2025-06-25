@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.core.registry;
+package com.grape.grapes_ss.core.registry;
 
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
@@ -7,9 +7,9 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.minecraft.world.item.crafting.RecipeType;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.core.recipe.MiniFridgeRecipe;
-import net.satisfy.beachparty.core.recipe.PalmBarRecipe;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.core.recipe.MiniFridgeRecipe;
+import com.grape.grapes_ss.core.recipe.PalmBarRecipe;
 
 import java.util.function.Supplier;
 

@@ -1,12 +1,12 @@
-package net.satisfy.beachparty.core.entity.goals;
+package com.grape.grapes_ss.core.entity.goals;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.ai.goal.Goal;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
-import net.satisfy.beachparty.core.block.SandBucketBlock;
-import net.satisfy.beachparty.core.util.SandCastleManager;
+import com.grape.grapes_ss.core.block.SandBucketBlock;
+import com.grape.grapes_ss.core.util.SandCastleManager;
 
 public class ApproachSandCastleGoal extends Goal {
     private final Mob mob;

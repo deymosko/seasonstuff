@@ -1,4 +1,4 @@
-package net.satisfy.beachparty.platform;
+package com.grape.grapes_ss.platform;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
@@ -16,8 +16,8 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
-import net.satisfy.beachparty.Beachparty;
-import net.satisfy.beachparty.forge.registry.BeachpartyConfig;
+import com.grape.grapes_ss.Beachparty;
+import com.grape.grapes_ss.forge.registry.BeachpartyConfig;
 
 import java.util.List;
 import java.util.function.Supplier;
