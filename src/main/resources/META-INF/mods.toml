@@ -31,8 +31,3 @@ ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.beachparty]]
-modId = "architectury"
-mandatory = true
-versionRange = "[9.0.8,)"
-ordering = "AFTER"
-side = "BOTH"

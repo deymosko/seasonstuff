@@ -1,7 +1,5 @@
 package net.satisfy.beachparty.forge;
 
-import dev.architectury.platform.Platform;
-import dev.architectury.platform.forge.EventBuses;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -15,6 +13,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.fml.loading.FMLPaths;
 import net.satisfy.beachparty.Beachparty;
 import net.satisfy.beachparty.core.block.BeachSunLounger;
 import net.satisfy.beachparty.core.block.BeachTowelBlock;
@@ -23,16 +22,16 @@ import net.satisfy.beachparty.core.registry.ObjectRegistry;
 import net.satisfy.beachparty.forge.client.integration.CuriosWearableTrinket;
 import net.satisfy.beachparty.forge.registry.BeachpartyConfig;
 import net.satisfy.beachparty.forge.registry.BeachpartyVillagers;
-import net.satisfy.beachparty.platform.forge.PlatformHelperImpl;
+import net.satisfy.beachparty.platform.PlatformHelper;
 
 @Mod(Beachparty.MOD_ID)
 public class BeachpartyForge {
     public BeachpartyForge() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        EventBuses.registerModEventBus(Beachparty.MOD_ID, modEventBus);
         BeachpartyVillagers.register(modEventBus);
-        PlatformHelperImpl.ENTITY_TYPES.register(modEventBus);
-        BeachpartyConfig.loadConfig(BeachpartyConfig.COMMON_CONFIG, Platform.getConfigFolder().resolve("beachparty.toml").toString());
+        PlatformHelper.init();
+        BeachpartyConfig.loadConfig(BeachpartyConfig.COMMON_CONFIG,
+                FMLPaths.CONFIGDIR.get().resolve("beachparty.toml").toString());
 
         Beachparty.init();
         modEventBus.addListener(this::commonSetup);

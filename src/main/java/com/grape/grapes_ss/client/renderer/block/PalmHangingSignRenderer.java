@@ -4,8 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.Model;
 import net.minecraft.client.model.geom.ModelLayers;
 import net.minecraft.client.model.geom.ModelPart;
@@ -30,7 +28,6 @@ import net.satisfy.beachparty.core.block.entity.PalmSignBlockEntity;
 import java.util.Map;
 
 @SuppressWarnings("all")
-@Environment(EnvType.CLIENT)
 public class PalmHangingSignRenderer extends PalmSignRenderer {
     private static final String PLANK = "plank";
     private static final String V_CHAINS = "vChains";
@@ -104,7 +101,6 @@ public class PalmHangingSignRenderer extends PalmSignRenderer {
         return LayerDefinition.create(meshDefinition, 64, 32);
     }
 
-    @Environment(EnvType.CLIENT)
     public static final class HangingSignModel extends Model {
         public final ModelPart root;
         public final ModelPart plank;
