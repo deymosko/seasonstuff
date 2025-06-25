@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:is_nether",
+    "#minecraft:is_savanna",
+    "minecraft:badlands",
+    "minecraft:desert",
+    "minecraft:beach",
+    "minecraft:eroded_badlands"
+  ]
+}

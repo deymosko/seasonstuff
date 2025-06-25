@@ -1,0 +1,133 @@
+plugins {
+    id 'java'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)' // ForgeGradle 6.x
+}
+
+group = 'com.yourmodid'
+version = '1.0.0'
+archivesBaseName = 'grapesseasonstuff'
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+    copyIdeResources = true
+
+    runs {
+        client {
+            workingDirectory project.file("run")
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                grapesseasonstuff {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file("run")
+            property 'forge.logging.markers', 'REGISTRIES'
+            property 'forge.logging.console.level', 'debug'
+
+            mods {
+                grapesseasonstuff {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file("run-data")
+            args '--mod', 'grapesseasonstuff', '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+        }
+    }
+}
+
+sourceSets.main.resources.srcDirs += 'src/generated/resources'
+
+repositories {
+    mavenCentral()
+
+    // CurseMaven for Curios
+    maven {
+        url = "https://cursemaven.com"
+    }
+
+    // REI
+    maven {
+        name = "shedaniel"
+        url = "https://maven.shedaniel.me/"
+    }
+
+    // JEI
+    maven {
+        url = "https://maven.blamejared.com"
+    }
+}
+
+dependencies {
+    // Forge
+    minecraft "net.minecraftforge:forge:1.20.1-47.2.0"
+
+    // Roughly Enough Items (REI)
+    implementation fg.deobf("me.shedaniel:RoughlyEnoughItems-forge:12.1.750")
+
+    // Just Enough Items (JEI)
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-common-api:15.2.0.25")
+    compileOnly fg.deobf("mezz.jei:jei-1.20.1-forge-api:15.2.0.25")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.20.1-forge:15.2.0.25")
+
+    // Curios
+    implementation fg.deobf("curse.maven:curios-309927:5680164")
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    var replaceProperties = [
+            minecraft_version: "1.20.1",
+            mod_id            : "grapesseasonstuff",
+            mod_name          : "Grapes Season Stuff",
+            mod_version       : project.version,
+            mod_authors       : "YourName",
+            mod_description   : "Forge-only version of Grapes Season Stuff mod"
+    ]
+    inputs.properties replaceProperties
+
+    filesMatching(['META-INF/mods.toml', 'pack.mcmeta']) {
+        expand replaceProperties
+    }
+}
+
+tasks.named('jar', Jar).configure {
+    manifest {
+        attributes([
+                'Specification-Title'     : project.name,
+                'Specification-Vendor'    : 'YourName',
+                'Specification-Version'   : '1',
+                'Implementation-Title'    : project.name,
+                'Implementation-Version'  : project.version,
+                'Implementation-Vendor'   : 'YourName',
+                'Implementation-Timestamp': new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
+        ])
+    }
+    finalizedBy 'reobfJar'
+}
+
+publishing {
+    publications {
+        register('mavenJava', MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file://${project.projectDir}/mcmodsrepo"
+        }
+    }
+}

@@ -1,0 +1,81 @@
+{
+  "multipart": [
+    {
+      "apply": {
+        "model": "beachparty:block/sandcastle_base"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/sandcastle_tower1"
+      },
+      "when": {
+        "tall": "true",
+        "petrified": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/sandcastle_tower3"
+      },
+      "when": {
+        "right": "true",
+        "petrified": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/sandcastle_tower2"
+      },
+      "when": {
+        "top": "true",
+        "petrified": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/sandcastle_tower4"
+      },
+      "when": {
+        "left": "true",
+        "petrified": "false"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/petrified_sandcastle_tower1"
+      },
+      "when": {
+        "tall": "true",
+        "petrified": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/petrified_sandcastle_tower3"
+      },
+      "when": {
+        "right": "true",
+        "petrified": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/petrified_sandcastle_tower2"
+      },
+      "when": {
+        "top": "true",
+        "petrified": "true"
+      }
+    },
+    {
+      "apply": {
+        "model": "beachparty:block/petrified_sandcastle_tower4"
+      },
+      "when": {
+        "left": "true",
+        "petrified": "true"
+      }
+    }
+  ]
+}

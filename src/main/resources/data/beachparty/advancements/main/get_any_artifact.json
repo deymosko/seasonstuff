@@ -1,0 +1,42 @@
+{
+  "parent": "beachparty:main/welcome_to_the_beach",
+  "display": {
+    "icon": {
+    },
+    "title": {
+      "translate": "advancement.beachparty.get_any_artifact"
+    },
+    "description": {
+      "translate": "advancement.beachparty.get_any_artifact.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "have_any_artifact": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "beachparty:crocs",
+              "beachparty:swim_wings",
+              "beachparty:rubber_ring_blue",
+              "beachparty:rubber_ring_pink",
+              "beachparty:rubber_ring_stripped",
+              "beachparty:rubber_ring_pelican",
+              "beachparty:rubber_ring_axolotl",
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "have_any_artifact"
+    ]
+  ]
+}

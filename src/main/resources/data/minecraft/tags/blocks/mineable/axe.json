@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "beachparty:beach_chair",
+    "beachparty:beach_sun_lounger",
+    "beachparty:palm_bar",
+    "beachparty:palm_bar_stool",
+    "beachparty:palm_table",
+    "beachparty:palm_wall_hanging_sign",
+    "beachparty:palm_wall_sign",
+  ]
+}
