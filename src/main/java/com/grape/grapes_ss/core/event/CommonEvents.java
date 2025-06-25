@@ -1,9 +1,10 @@
 package net.satisfy.beachparty.core.event;
 
-import dev.architectury.event.EventResult;
-import dev.architectury.event.events.common.EntityEvent;
-import dev.architectury.event.events.common.LootEvent;
-import dev.architectury.event.events.common.PlayerEvent;
+import net.minecraftforge.event.LootTableLoadEvent;
+import net.minecraftforge.event.entity.living.LivingHurtEvent;
+import net.minecraftforge.event.entity.player.AttackEntityEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraft.core.BlockPos;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
@@ -28,19 +29,23 @@ import net.satisfy.beachparty.core.block.BeachParasolBlock;
 import net.satisfy.beachparty.core.registry.ObjectRegistry;
 import org.jetbrains.annotations.Nullable;
 
+@Mod.EventBusSubscriber(modid = Beachparty.MOD_ID)
 public class CommonEvents {
 
     public static void init() {
-        LootEvent.MODIFY_LOOT_TABLE.register(CommonEvents::onModifyLootTable);
-        PlayerEvent.ATTACK_ENTITY.register(CommonEvents::onPlayerAttack);
-        EntityEvent.LIVING_HURT.register(CommonEvents::onLivingHurt);
     }
 
-    public static void onModifyLootTable(@Nullable LootDataManager lootDataManager, ResourceLocation id, LootEvent.LootTableModificationContext ctx, boolean b) {
-        LoottableInjector.InjectLoot(id, ctx);
+    @SubscribeEvent
+    public static void onLootLoad(LootTableLoadEvent event) {
+        LoottableInjector.InjectLoot(event.getName(), event.getTable());
     }
 
-    private static EventResult onPlayerAttack(Player player, Level level, Entity entity, InteractionHand hand, @Nullable EntityHitResult result) {
+    @SubscribeEvent
+    public static void onPlayerAttack(AttackEntityEvent event) {
+        Player player = event.getEntity();
+        Level level = player.level();
+        Entity entity = event.getTarget();
+        InteractionHand hand = event.getHand();
         ItemStack itemInHand = player.getItemInHand(hand);
 
         if (itemInHand.getItem() == ObjectRegistry.POOL_NOODLE.get()) {
@@ -49,22 +54,21 @@ public class CommonEvents {
             entity.push(knockbackDirection.x, knockbackDirection.y, knockbackDirection.z);
 
             level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.PARROT_IMITATE_SLIME, SoundSource.PLAYERS, 1.0F, 1.5F);
-
-            return EventResult.interruptTrue();
+            event.setCanceled(true);
         }
-        return EventResult.pass();
     }
 
-    private static EventResult onLivingHurt(LivingEntity entity, DamageSource source, float amount) {
-        if (entity.level().isClientSide()) return EventResult.pass();
+    @SubscribeEvent
+    public static void onLivingHurt(LivingHurtEvent event) {
+        LivingEntity entity = event.getEntity();
+        DamageSource source = event.getSource();
+        float amount = event.getAmount();
+        if (entity.level().isClientSide()) return;
 
         if (isFireDamage(source) && isNearBeachParasol(entity)) {
             float reducedDamage = amount * 0.96f;
-            entity.setHealth(entity.getHealth() + (amount - reducedDamage));
-            return EventResult.interruptFalse();
+            event.setAmount(reducedDamage);
         }
-
-        return EventResult.pass();
     }
 
     private static boolean isFireDamage(DamageSource source) {
@@ -90,7 +94,7 @@ public class CommonEvents {
     }
 
     public static class LoottableInjector {
-        public static void InjectLoot(ResourceLocation id, LootEvent.LootTableModificationContext context) {
+        public static void InjectLoot(ResourceLocation id, net.minecraft.world.level.storage.loot.LootTable table) {
             String prefix = "minecraft:chests/";
             String name = id.toString();
 
@@ -99,7 +103,7 @@ public class CommonEvents {
                 switch (file) {
                     case "desert_pyramid", "buried_treasure", "shipwreck_supply", "shipwreck_treasure",
                          "simple_dungeon", "underwater_ruin_big", "underwater_ruin_small", "woodland_mansion" ->
-                            context.addPool(getPool(file));
+                            table.addPool(getPool(file));
                     default -> {
                     }
                 }

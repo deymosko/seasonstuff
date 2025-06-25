@@ -4,8 +4,6 @@ import com.google.common.collect.ImmutableMap;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
 import com.mojang.math.Axis;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.Font.DisplayMode;
@@ -43,7 +41,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 
-@Environment(EnvType.CLIENT)
 public class PalmSignRenderer<T extends PalmSignBlockEntity> implements BlockEntityRenderer<T> {
     private static final String STICK = "stick";
     private static final int BLACK_TEXT_OUTLINE_COLOR = -988212;
@@ -206,7 +203,6 @@ public class PalmSignRenderer<T extends PalmSignBlockEntity> implements BlockEnt
         return LayerDefinition.create(meshDefinition, 64, 32);
     }
 
-    @Environment(EnvType.CLIENT)
     public static final class SignModel extends Model {
         public final ModelPart root;
         public final ModelPart stick;

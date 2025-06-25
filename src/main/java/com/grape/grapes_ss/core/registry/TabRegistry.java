@@ -1,8 +1,9 @@
 package net.satisfy.beachparty.core.registry;
 
-import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.RegistrySupplier;
-import net.minecraft.core.registries.Registries;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.TextColor;
 import net.minecraft.world.item.CreativeModeTab;
@@ -11,9 +12,9 @@ import net.satisfy.beachparty.Beachparty;
 
 @SuppressWarnings("unused")
 public class TabRegistry {
-    public static final DeferredRegister<CreativeModeTab> BEACHPARTY_TABS = DeferredRegister.create(Beachparty.MOD_ID, Registries.CREATIVE_MODE_TAB);
+    public static final DeferredRegister<CreativeModeTab> BEACHPARTY_TABS = DeferredRegister.create(ForgeRegistries.CREATIVE_MODE_TABS, Beachparty.MOD_ID);
 
-    public static final RegistrySupplier<CreativeModeTab> BEACHPARTY_TAB = BEACHPARTY_TABS.register("beachparty", () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
+    public static final RegistryObject<CreativeModeTab> BEACHPARTY_TAB = BEACHPARTY_TABS.register("beachparty", () -> CreativeModeTab.builder(CreativeModeTab.Row.TOP, 0)
             .icon(() -> new ItemStack(ObjectRegistry.COCONUT_COCKTAIL.get()))
             .title(Component.translatable("creativetab.beachparty.tab").withStyle(style -> style.withColor(TextColor.fromRgb(0xc0924a))))
             .displayItems((parameters, out) -> {
@@ -56,6 +57,6 @@ public class TabRegistry {
             .build());
 
     public static void init() {
-        BEACHPARTY_TABS.register();
+        BEACHPARTY_TABS.register(FMLJavaModLoadingContext.get().getModEventBus());
     }
 }

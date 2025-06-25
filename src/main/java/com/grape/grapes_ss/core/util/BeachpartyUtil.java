@@ -2,11 +2,6 @@ package net.satisfy.beachparty.core.util;
 
 import com.google.gson.JsonArray;
 import com.mojang.datafixers.util.Pair;
-import dev.architectury.platform.Platform;
-import dev.architectury.registry.client.rendering.ColorHandlerRegistry;
-import dev.architectury.registry.registries.DeferredRegister;
-import dev.architectury.registry.registries.Registrar;
-import dev.architectury.registry.registries.RegistrySupplier;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.core.NonNullList;
@@ -28,6 +23,8 @@ import net.minecraft.world.level.block.state.properties.EnumProperty;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.BooleanOp;
 import net.minecraft.world.phys.shapes.Shapes;
+import net.minecraftforge.registries.DeferredRegister;
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.satisfy.beachparty.core.entity.ChairEntity;
 import net.satisfy.beachparty.core.registry.EntityTypeRegistry;
@@ -43,18 +40,18 @@ public class BeachpartyUtil {
     public static final EnumProperty<BeachpartyUtil.LineConnectingType> LINE_CONNECTING_TYPE = EnumProperty.create("type", BeachpartyUtil.LineConnectingType.class);
     private static final Map<ResourceLocation, Map<BlockPos, Pair<ChairEntity, BlockPos>>> CHAIRS = new HashMap<>();
 
-    public static <T extends Block> RegistrySupplier<T> registerWithItem(DeferredRegister<Block> registerB, Registrar<Block> registrarB, DeferredRegister<Item> registerI, Registrar<Item> registrarI, ResourceLocation name, Supplier<T> block) {
-        RegistrySupplier<T> toReturn = registerWithoutItem(registerB, registrarB, name, block);
-        registerItem(registerI, registrarI, name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
+    public static <T extends Block> RegistryObject<T> registerWithItem(DeferredRegister<Block> registerB, DeferredRegister<Item> registerI, ResourceLocation name, Supplier<T> block) {
+        RegistryObject<T> toReturn = registerWithoutItem(registerB, name, block);
+        registerItem(registerI, name, () -> new BlockItem(toReturn.get(), new Item.Properties()));
         return toReturn;
     }
 
-    public static <T extends Block> RegistrySupplier<T> registerWithoutItem(DeferredRegister<Block> register, Registrar<Block> registrar, ResourceLocation path, Supplier<T> block) {
-        return Platform.isForge() ? register.register(path.getPath(), block) : registrar.register(path, block);
+    public static <T extends Block> RegistryObject<T> registerWithoutItem(DeferredRegister<Block> register, ResourceLocation path, Supplier<T> block) {
+        return register.register(path.getPath(), block);
     }
 
-    public static <T extends Item> RegistrySupplier<T> registerItem(DeferredRegister<Item> register, Registrar<Item> registrar, ResourceLocation path, Supplier<T> itemSupplier) {
-        return Platform.isForge() ? register.register(path.getPath(), itemSupplier) : registrar.register(path, itemSupplier);
+    public static <T extends Item> RegistryObject<T> registerItem(DeferredRegister<Item> register, ResourceLocation path, Supplier<T> itemSupplier) {
+        return register.register(path.getPath(), itemSupplier);
     }
 
     public static VoxelShape rotateShape(Direction from, Direction to, VoxelShape shape) {
@@ -153,10 +150,6 @@ public class BeachpartyUtil {
             }
         }
         return false;
-    }
-
-    public static void registerColorArmor(Item item, int defaultColor) {
-        ColorHandlerRegistry.registerItemColors((stack, tintIndex) -> 0 < tintIndex ? 0x00FFFFFF : getColor(stack, defaultColor), item);
     }
 
     static int getColor(ItemStack itemStack, int defaultColor) {

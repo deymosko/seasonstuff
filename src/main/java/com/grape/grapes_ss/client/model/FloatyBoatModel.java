@@ -3,8 +3,6 @@ package net.satisfy.beachparty.client.model;
 import com.google.common.collect.ImmutableList;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.fabricmc.api.EnvType;
-import net.fabricmc.api.Environment;
 import net.minecraft.client.model.ListModel;
 import net.minecraft.client.model.WaterPatchModel;
 import net.minecraft.client.model.geom.ModelLayerLocation;
@@ -17,7 +15,6 @@ import net.minecraft.world.entity.vehicle.Boat;
 import net.satisfy.beachparty.Beachparty;
 import org.jetbrains.annotations.NotNull;
 
-@Environment(EnvType.CLIENT)
 @SuppressWarnings("unused")
 public class FloatyBoatModel extends ListModel<Boat> implements WaterPatchModel {
     public static final ModelLayerLocation LAYER_LOCATION = new ModelLayerLocation(new ResourceLocation(Beachparty.MOD_ID, "floaty_boat"), "main");
