@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.client;
+package com.grape.grapes_ss.client;
 
 import net.minecraft.client.model.BoatModel;
 import net.minecraft.client.model.ChestBoatModel;
@@ -19,8 +19,8 @@ import com.grape.grapes_ss.client.BeachPartyClient;
 import com.grape.grapes_ss.client.model.FloatyBoatModel;
 import com.grape.grapes_ss.core.entity.PalmBoatEntity;
 import com.grape.grapes_ss.core.registry.ObjectRegistry;
-import com.grape.grapes_ss.forge.client.integration.*;
-import com.grape.grapes_ss.forge.client.renderer.player.layers.*;
+import com.grape.grapes_ss.client.integration.*;
+import com.grape.grapes_ss.client.renderer.player.layers.*;
 import top.theillusivec4.curios.api.client.CuriosRendererRegistry;
 
 import java.util.function.Function;

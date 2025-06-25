@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.registry;
+package com.grape.grapes_ss.registry;
 
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.sounds.SoundEvents;

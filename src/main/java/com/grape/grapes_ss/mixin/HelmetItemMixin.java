@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.mixin;
+package com.grape.grapes_ss.mixin;
 
 import net.minecraft.client.model.HumanoidModel;
 import net.minecraft.client.model.Model;

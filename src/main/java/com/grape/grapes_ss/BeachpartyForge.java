@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge;
+package com.grape.grapes_ss;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.Level;
@@ -19,9 +19,9 @@ import com.grape.grapes_ss.core.block.BeachSunLounger;
 import com.grape.grapes_ss.core.block.BeachTowelBlock;
 import com.grape.grapes_ss.core.registry.CompostablesRegistry;
 import com.grape.grapes_ss.core.registry.ObjectRegistry;
-import com.grape.grapes_ss.forge.client.integration.CuriosWearableTrinket;
-import com.grape.grapes_ss.forge.registry.BeachpartyConfig;
-import com.grape.grapes_ss.forge.registry.BeachpartyVillagers;
+import com.grape.grapes_ss.client.integration.CuriosWearableTrinket;
+import com.grape.grapes_ss.registry.BeachpartyConfig;
+import com.grape.grapes_ss.registry.BeachpartyVillagers;
 import com.grape.grapes_ss.platform.PlatformHelper;
 
 @Mod(Beachparty.MOD_ID)

@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.client.integration;
+package com.grape.grapes_ss.client.integration;
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.Minecraft;
