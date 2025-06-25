@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.rei;
+package com.grape.grapes_ss.rei;
 
 import me.shedaniel.rei.api.client.plugins.REIClientPlugin;
 import me.shedaniel.rei.api.client.registry.category.CategoryRegistry;

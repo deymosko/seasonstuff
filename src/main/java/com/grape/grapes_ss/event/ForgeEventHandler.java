@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.event;
+package com.grape.grapes_ss.event;
 
 import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.entity.npc.VillagerTrades;
@@ -11,8 +11,8 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import com.grape.grapes_ss.Beachparty;
 import com.grape.grapes_ss.core.registry.ObjectRegistry;
-import com.grape.grapes_ss.forge.client.integration.CuriosWearableTrinket;
-import com.grape.grapes_ss.forge.registry.BeachpartyVillagers;
+import com.grape.grapes_ss.client.integration.CuriosWearableTrinket;
+import com.grape.grapes_ss.registry.BeachpartyVillagers;
 
 
 import java.util.List;

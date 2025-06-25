@@ -17,7 +17,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import com.grape.grapes_ss.Beachparty;
-import com.grape.grapes_ss.forge.registry.BeachpartyConfig;
+import com.grape.grapes_ss.registry.BeachpartyConfig;
 
 import java.util.List;
 import java.util.function.Supplier;

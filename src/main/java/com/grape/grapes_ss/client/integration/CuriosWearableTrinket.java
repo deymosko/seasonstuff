@@ -1,4 +1,4 @@
-package com.grape.grapes_ss.forge.client.integration;
+package com.grape.grapes_ss.client.integration;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleOptions;
